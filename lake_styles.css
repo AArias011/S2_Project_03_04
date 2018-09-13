@@ -1,5 +1,4 @@
-﻿@
-/*
+﻿/*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Case Problem 4
@@ -11,3 +10,22 @@
    Filename: lake_styles.css
 
 */
+
+
+html {
+    background-color: burlywood;
+}
+
+body {
+    font-family: 'Champagne, DobkinPlain';
+}
+
+body footer {
+    background-color: rgb(165, 110, 73);
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.3em;
+}
