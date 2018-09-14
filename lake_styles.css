@@ -1,4 +1,20 @@
-﻿/*
+﻿@charset "utf-8";
+
+/* This sets the font. */
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('TrueType');
+}
+
+/* This sets the font. */
+@font-face {
+    font-family: DobkinPlain;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('TrueType');
+}
+
+/*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Case Problem 4
@@ -11,21 +27,97 @@
 
 */
 
-
+/* This sets the background color of the html. */
 html {
-    background-color: burlywood;
+    background-color: brown;
 }
 
+/* This sets the background color of the body. */
 body {
-    font-family: 'Champagne, DobkinPlain';
+
+    background-color: rgb(255, 221, 178);
 }
 
+/* This sets the background color of the footer. It sets the padding to 5 pixels. And aligns the footer to the center. */
 body footer {
-    background-color: rgb(165, 110, 73);
+    background-color: hsla(0, 60%, 60%, 0.6);
     padding-bottom: 5px;
     text-align: center;
 }
 
+/* This sets the padding of the image thats on the rendered page. */
+section#leftcol img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* This code sets the padding to 10 pixels to the right of the paragraph.*/
+p {
+    padding-left: 10px;
+}
+
+/* This sets the font size, font family of the h1 headings. It moves the margin 1 pixels and the padding left 10 pixels. */
 h1 {
-    font-size: 2.3em;
+    font-size: 4em;
+    font-family: Champagne, DobkinPlain;
+    margin: 1px;
+    padding-left: 10px;
+
+}
+
+/* This sets the font family and font size of the h2 headings. */
+h2 {
+    font-family: Champagne, DobkinPlain;
+    font-size: 1.5em;
+}
+
+/* This gives the hyperlinks a list style of nothing, a font size of 0.9 and a line height of 2.  */
+nav>ul {
+    list-style: none;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+
+/* This gives the hypertext links a blueish color and the text-decoration to none. */
+nav>ul>li>a:visited,
+nav>ul>li>a:link {
+    color: rgb(86, 103, 172);
+    text-decoration: none;
+}
+
+/* This sets the color of when you hover over the hypertext links to a brown. */
+nav>ul>li>a:active,
+nav>ul>li>a:hover {
+    color: brown;
+}
+
+/* This sets the background color of the blockquote. The text color to a black. Sets the opacity, padding and font-size. */
+blockquote {
+    background-color: rgba(165, 42, 42, 0.432);
+    color: rgb(5, 5, 5);
+    opacity: 0.65;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.2em;
+}
+
+/* This sets open quotes before the text. */
+blockquote::before {
+    content: open-quote;
+
+}
+
+/* This sets closed quotes after the text. */
+blockquote::after {
+    content: close-quote;
+
+}
+
+/* This sets the background-color of the aside. */
+aside {
+    background-color: rgb(172, 69, 69, 0.3);
+}
+
+/* This sets the background color of the second aside element. */
+aside:first-of-type {
+    background-color: rgb(228, 117, 109, 0.3);
 }
